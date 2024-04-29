@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@300;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+header {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(195, 116, 26);
+}
+}
+
+.nav {
+  display: flex;
+
+}
+
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #f7f2ef;
+  margin-left: 100px;
+}
+
+.nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+  width: 70%;
+}
+
+.navbar li {
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+  color: #fefafa;
+  font-size: 20px;
+}
+
+.link {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  color: #faf5f5;
+  font-size: 20px;
+
+}
+
+.icon {
+  width: 90px;
+  height: 30px;
+  background-color: rgb(107, 12, 27);
+  border-radius: 50%;
+}
+
+.icon-search {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.container {
+  display: flex;
+  margin-top: 100px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+
+.container .col {
+  width: 30%;
+  height: 500px;
+  border: 1px solid rgb(175, 174, 174);
+  border-top: none;
+
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;    
+  height: 300px;
+  overflow: hidden;
+  transition: transform 0.5s all linear;
+  
+
+}
+
+.image img {
+  width: 100%; /* Используйте относительную ширину */
+  height: auto; /* Поддерживает пропорциональное изменение высоты */
+  width: 100%;
+  height: 300px;
+  border-radius: 10px 10px 0 0;
+  /* overflow: hidden; */
+
+}
+
+.image img:hover {
+  transform: scale(1.1);
+}
+
+.name {
+  display: flex;
+  flex-wrap: wrap;
+  height: 30px;
+}
+
+.name h1 a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.name b {
+  width: 35px;
+  height: 25px;
+  background-color: rgb(8, 188, 14);
+  margin-left: 390px;
+  color: rgb(13, 13, 13);
+  transform: translateY(-20px);
+}
+
+h6 {
+  font-family: 'Mpntserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: rgb(22, 161, 4);
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+.opis-name {
+  margin-top: 10px;
+  width: 100%;
+  height: 60px;
+}
+
+.opis-name .opis {
+  letter-spacing: 2px;
+  margin-left: 30px;
+  font-weight: 300;
+  color: rgb(2, 14, 181);
+}
+
+.grafic {
+  display: flex;
+  margin-top: 14px;
+  gap: 40px;
+}
+
+.year {
+  border-right: 1px solid rgb(73, 249, 15);
+  margin-left: 60px;
+
+}
+
+.class-size {
+  border-right: 1px solid rgb(5, 245, 33);
+  margin-left: 3 0px;
+}
+
+h3 {
+  margin-right: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.course {
+  margin-right: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+
+
+
+}
+
+.size {
+  margin-right: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+
+}
+
+.duration {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.col {
+  margin-bottom: 20px;
+  background-color: rgb(250, 196, 72); /* Установка белого цвета фона */
+    opacity: 1; /* Установка непрозрачности на 1 (по умолчанию блоки не должны быть прозрачными) */
+}
+
+
+
+
+
+
+
+
+.buy-button {
+  padding: 10px 40px;
+  background-color: #15b90c; /* Цвет фона кнопки */
+  color: #2609e5; /* Цвет текста */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.buy-button:hover {
+  background-color: #adb300; /* Изменение цвета кнопки при наведении */
+}
+
+
+
+
+
+
+/* Для экранов шириной до 768px (мобильные устройства) */
+@media (max-width: 768px) {
+  .designcontainer {
+      flex-direction: column;
+      align-items: center;
+  }
+  .container {
+      width: 90%; /* Уменьшаем ширину контейнера на мобильных устройствах */
+  }
+  .img::after {
+      font-size: 30px; /* Уменьшаем размер текста заголовка */
+  }
+  .img::before {
+      font-size: 16px; /* Уменьшаем размер текста подзаголовка */
+  }
+  .profile {
+      flex-direction: column; /* Столбцы вместо строк для профиля */
+      align-items: center;
+  }
+  .profile img {
+      margin-bottom: 10px; /* Уменьшаем отступ между изображениями и текстом в профиле */
+  }
+  .container h1 {
+      margin-left: 0; /* Убираем отступ слева у заголовка контейнера */
+      text-align: center; /* Выравниваем заголовок по центру */
+  }
+}
+
+/* Для экранов шириной от 769px до 1024px (планшеты) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+      width: 80%; /* Уменьшаем ширину контейнера для планшетов */
+  }
+}
+
+/* Для экранов шириной от 1025px и выше (настольные устройства) */
+@media (min-width: 1025px) {
+  .designcontainer {
+      padding-top: 50px; /* Увеличиваем отступ сверху для больших экранов */
+  }
+}
